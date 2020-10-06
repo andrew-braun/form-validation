@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="style.css" />
+		<title>Form with Validation</title>
+	</head>
+	<body>
+		<div class="form-container">
+			<form id="form" class="form">
+				<h2>Join the dark side!</h2>
+				<p>
+					Perks include: unlimited power, stylish black wardrobe, health
+					insurance
+				</p>
+				<div class="form-control">
+					<label for="username">Username</label>
+					<input type="text" id="username" placeholder="Enter evil username" />
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="email">Email</label>
+					<input type="text" id="email" placeholder="Enter evil email" />
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="password">Password</label>
+					<input
+						type="password"
+						id="password"
+						placeholder="Enter evil password"
+					/>
+					<small>Error message</small>
+				</div>
+				<div class="form-control">
+					<label for="confirm-password">Confirm Password</label>
+					<input
+						type="password"
+						id="confirm-password"
+						placeholder="Enter evil password again!"
+					/>
+					<small>Error message</small>
+				</div>
+				<button class="submit-button" id="submit-button" type="submit">
+					Submit
+				</button>
+			</form>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>

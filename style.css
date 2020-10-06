@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--light-1: hsla(252, 92%, 74%, 1);
+	--light-2: hsla(321, 96%, 82%, 1);
+	--mid-1: hsla(219, 95%, 45%, 1);
+	--mid-2: hsla(16, 86%, 54%, 1);
+	--mid-3: hsla(140, 100%, 29%, 1);
+	--dark-1: hsla(245, 67%, 24%, 1);
+	--dark-2: hsla(182, 100%, 20%, 1);
+}
+
+body {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+	background: whitesmoke;
+	font-family: "Noto Sans", sans-serif;
+}
+.form-container {
+	flex: 1 1 auto;
+	min-width: 15rem;
+	max-width: 40rem;
+	border-radius: 1rem;
+	background: var(--dark-2);
+	box-shadow: 0 10px 15px hsla(0, 100%, 0%, 0.3);
+	color: white;
+}
+
+.form {
+	padding: 1.2rem 1.8rem;
+}
+
+.form-container h2 {
+	text-align: center;
+}
+
+.form-control {
+	position: relative;
+	margin-bottom: 0.4rem;
+	padding-bottom: 0.8rem;
+}
+
+.form-control label {
+	display: block;
+	margin-bottom: 0.4rem;
+	color: var(--light-2);
+}
+
+.form-control input {
+	display: block;
+	width: 100%;
+	padding: 0.8rem;
+	border: 3px solid var(--dark-1);
+	border-radius: 0.3rem;
+	font-size: 1.1rem;
+}
+
+.form-control input:focus {
+	outline: 0;
+	border-color: var(--mid-1);
+}
+
+.form-control.success input {
+	border-color: var(--mid-3);
+}
+
+.form-control.error input {
+	border-color: var(--mid-2);
+}
+
+.form-control small {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	color: var(--mid-2);
+	visibility: hidden;
+}
+
+.form-control.error small {
+	visibility: visible;
+}
+
+.submit-button {
+	display: block;
+	padding: 0.6rem;
+	margin: auto;
+	border: none;
+	border-radius: 0.4rem;
+	background-color: var(--dark-1);
+	font-size: 1.4rem;
+	color: var(--light-2);
+	cursor: pointer;
+	width: 50%;
+	transition: opacity 0.3s ease-in, color 0.3s ease-in;
+}
+
+.submit-button:hover {
+	opacity: 0.8;
+	color: white;
+}
