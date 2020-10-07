@@ -55,6 +55,7 @@ body {
 .form-control input {
 	display: block;
 	width: 100%;
+	margin-bottom: 0.4rem;
 	padding: 0.8rem;
 	border: 3px solid var(--dark-1);
 	border-radius: 0.3rem;
