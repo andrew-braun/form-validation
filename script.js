@@ -78,10 +78,3 @@ const handleSubmit = (event) => {
 };
 
 form.addEventListener("submit", handleSubmit);
-
-// Username validation
-const validateUsername = (username) => {
-	username.value.length < 3
-		? showError(username, "Username must be at least three characters")
-		: showSuccess(username);
-};
