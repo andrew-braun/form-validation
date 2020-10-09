@@ -24,7 +24,7 @@ const showSuccess = (input) => {
 const checkRequired = (inputArr) => {
 	inputArr.forEach((input) => {
 		if (input.value.trim() === "") {
-			showError(input, `${fieldToUpperCase(input)} is required`);
+			showError(input, `${toSentenceCase(input)} is required`);
 		} else {
 			showSuccess(input);
 		}
@@ -32,7 +32,7 @@ const checkRequired = (inputArr) => {
 };
 
 // Make sure that the error message is always displayed with a capital first letter
-const fieldToUpperCase = (input) => {
+const toSentenceCase = (input) => {
 	return input.id.charAt(0).toUpperCase() + input.id.slice(1);
 };
 
@@ -44,7 +44,7 @@ const checkLength = (input, min, max) => {
 	} else {
 		showError(
 			input,
-			`${fieldToUpperCase(
+			`${toSentenceCase(
 				input
 			)} needs to be between ${min} and ${max} characters.`
 		);
